@@ -73,7 +73,7 @@ extension InterfaceController: WCSessionDelegate {
     }
     
     //Param:  iOSApp의 당시시각(NSDateInterval포맷), iOSApp의 당시 currentTime
-    //Return: 현재 currentTime
+    //Return: 현재 Watch 의 currentTime
     func calculateCurrentTime(dateOrgAs1970:Double , iOSCurrentTime:Double) -> Double {
         let now =  NSDate().timeIntervalSince1970 //현재시각 1970포맷
         let dateDifferenceBetweenWatchAndiOS = Double( now - dateOrgAs1970 )// 현재시각 - iOS당시시각
